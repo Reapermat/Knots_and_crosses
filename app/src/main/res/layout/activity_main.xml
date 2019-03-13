@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/Red1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/Red2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="17dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/Red3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/Red4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/Red5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="17dp"
+            android:layout_marginLeft="17dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/Red6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="17dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/Red7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/Red8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/Red9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1"
+            android:onClick="DropIn"
+            android:tag="8" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fireworks"
+        android:layout_width="354dp"
+        android:layout_height="332dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="14dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giphy" />
+
+</android.support.constraint.ConstraintLayout>
